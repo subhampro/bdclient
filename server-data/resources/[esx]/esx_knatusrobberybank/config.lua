@@ -3,7 +3,7 @@ Config.Locale = 'en'
 Config.NumberOfCopsRequired = 0
 
 --Updated to choose between cash or black money
-Config.moneyType = 'cash' -- 'cash' or 'black'
+Config.moneyType = 'black' -- 'cash' or 'black'
 
 Banks = {
 	["fleeca"] = {
@@ -24,13 +24,23 @@ Banks = {
 		lastrobbed = 0,
 		doortype = 'hei_prop_heist_sec_door'
 	},
-	--[[["blainecounty"] = {
+	["blainecounty"] = {
 		position = { ['x'] = -107.06505584717, ['y'] = 6474.8012695313, ['z'] = 31.62670135498 },
 		hackposition = { ['x'] = -107.06505584717, ['y'] = 6474.8012695313, ['z'] = 31.62670135498 },
 		reward = math.random(15000,25000),
 		nameofbank = "Blaine County Savings",
 		lastrobbed = 0
-	},--]]
+	},
+
+	["fleeca3"] = {
+		position = { ['x'] = 1172.98, ['y'] = 2716.57, ['z'] = 38.07 }, -- position of robbery, when you have tu use the item "blowtorch"
+		hackposition = { ['x'] = 1176.14, ['y'] = 2712.86, ['z'] = 38.09 }, -- position where you have to do hack with the minigame to open a door
+		--hackteleport = { ['x'] = 148.79908752441, ['y'] = -1045.5748242188, ['z'] = 29.36802482605 }, -- ignore this
+		reward = math.random(15000,25000), -- the random range of amount of money you will get for robbery this site
+		nameofbank = "Fleeca Bank", --Visual Name that will be the site
+		lastrobbed = 0, -- DONT TOUCH THIS variable used to make a delay to robb other time
+		doortype = 'V_ILEV_GB_VAULDR' -- Name or ID of the gameobject that will be rotate to make the open efect, you can check what id or name you need here: https://objects.gt-mp.net/ if you dont find it, contact with you developer, he will know how to get it in game
+	},
 	
 	["PrincipalBank"] = {
 		position = { ['x'] = 264.99899291992, ['y'] = 213.50576782227, ['z'] = 101.68346405029 },

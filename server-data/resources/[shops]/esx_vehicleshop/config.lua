@@ -19,13 +19,13 @@ Config.PlateUseSpace = true
 Config.Zones = {
 
 	ShopEntering = {
-		Pos   = vector3(-4159.86, -5191.75, 175.0),
+		Pos   = vector3(-9959.86, -9191.75, 9175.0),
 		Size  = {x = 1.5, y = 1.5, z = 1.0},
 		Type  = 1
 	},
 
 	ShopInside = {
-		Pos     = vector3(-47.5, -1097.2, 25.4),
+		Pos     = vector3(-9999.5, -9097.2, 925.4),
 		Size    = {x = 1.5, y = 1.5, z = 1.0},
 		Heading = -20.0,
 		Type    = -1

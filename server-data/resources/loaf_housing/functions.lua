@@ -30,7 +30,7 @@ weaponStorage = function(id)
         'default', GetCurrentResourceName(), 'storage',
     {
         title = Strings['Storage_Title'],
-        align = 'top-left',
+        align = 'center',
         elements = {
             {label = Strings['Store'], value = 's'},
             {label = Strings['Withdraw'], value = 'w'}
@@ -49,7 +49,7 @@ weaponStorage = function(id)
 
                 ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'storeItem', {
                     title = Strings['House_Inventory'],
-                    align = 'top-left',
+                    align = 'center',
                     elements = elements
                 }, function(data2, menu2)
                     TriggerServerEvent('loaf_housing:storeItem', 'weapon', data2.current.weapon, data2.current.ammo, id)
@@ -72,7 +72,7 @@ weaponStorage = function(id)
 
                 ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'withdrawItem', {
                     title = Strings['House_Inventory'],
-                    align = 'top-left',
+                    align = 'center',
                     elements = elements
                 }, function(data2, menu2)
                     TriggerServerEvent('loaf_housing:withdrawItem', 'weapon', data2.current.weapon, data2.current.ammo, id)
@@ -97,7 +97,7 @@ itemStorage = function(id)
         'default', GetCurrentResourceName(), 'storage',
     {
         title = Strings['Storage_Title'],
-        align = 'top-left',
+        align = 'center',
         elements = {
             {label = Strings['Store'], value = 's'},
             {label = Strings['Withdraw'], value = 'w'}
@@ -117,7 +117,7 @@ itemStorage = function(id)
         
                 ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'storeItem', {
                     title = Strings['Player_Inventory'],
-                    align = 'top-left',
+                    align = 'center',
                     elements = elements
                 }, function(data2, menu2)
                     ESX.UI.Menu.Open('dialog', GetCurrentResourceName(), 'putAmount', {title = Strings['Amount']}, function(data3, menu3)
@@ -155,7 +155,7 @@ itemStorage = function(id)
 
                 ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'withdrawItem', {
                     title = Strings['House_Inventory'],
-                    align = 'top-left',
+                    align = 'center',
                     elements = elements
                 }, function(data2, menu2)
                     ESX.UI.Menu.Open('dialog', GetCurrentResourceName(), 'putAmount', {title = Strings['Amount']}, function(data3, menu3)

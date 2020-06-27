@@ -3,12 +3,12 @@
 Config = {
     SellPercentage = 75, -- percentage of original price you should get back when selling a house.
     AddHouseBlips = true, -- add all available houses to the map?
-    AddBoughtHouses = true, -- add blips for houses bought by other people?
+    AddBoughtHouses = false, -- add blips for houses bought by other people?
     EnableGarage = false, -- requires my (Loaf) garage script. Costs $10
-    Use3DText = false, -- use 3d text instead of the normal top-left corner info box? Used for "press e" etc.
+    Use3DText = true, -- use 3d text instead of the normal top-left corner info box? Used for "press e" etc.
     IKEABlip = {
         ['Enabled'] = true,
-
+        ['Name'] = "IKEA",
         ['Sprite'] = 357,
         ['Colour'] = 0,
         ['Scale'] = 0.75
@@ -486,7 +486,7 @@ Config = {
     },
 
     Furnituring = { -- change position of where you buy furniture here.
-        ['enter'] = vector3(63.95, -1728.98, 28.62),
+        ['enter'] = vector3(2748.15, 3472.79, 54.80),
         ['teleport'] = vector3(45.34, -1771.77, 29.4),
     },
 
@@ -503,7 +503,7 @@ Config = {
         {['prop'] = 'trevor', ['door'] = vector3(-1112.25, -1578.4, 7.7), ['price'] = 250000},
         {['prop'] = 'trevor', ['door'] = vector3(-1114.34, -1579.47, 7.7), ['price'] = 250000},
         {['prop'] = 'trevor', ['door'] = vector3(-1114.95, -1577.57, 3.56), ['price'] = 250000},
-        {['prop'] = 'trevor', ['door'] = vector3(373.9276, 427.8789, 144.7342), ['price'] = 350000},
+        -- {['prop'] = 'trevor', ['door'] = vector3(373.9276, 427.8789, 144.7342), ['price'] = 350000},
 
         -- {['prop'] = 'nice', ['door'] = vector3(346.4424, 440.626, 146.783), ['price'] = 450000},
         {['prop'] = 'nice', ['door'] = vector3(331.4054, 465.6823, 150.2642), ['price'] = 450000},
@@ -920,7 +920,6 @@ Strings = {
     ['Let_In'] = 'Let someone in',
     ['Accept_Player'] = 'Let %s in?',
     ['Waiting_Owner'] = 'Waiting for the house owner to let you in.',
-    ['ikea'] = 'IKEA',
     ['Buy_Furniture'] = 'enter IKEA',
     ['Buying_Furniture'] = '~INPUT_FRONTEND_LEFT~ ~INPUT_FRONTEND_RIGHT~ browse\n~INPUT_CELLPHONE_DOWN~ ~INPUT_CELLPHONE_UP~ change category (%s)\n~INPUT_FRONTEND_RDOWN~ buy %s for $%s\n~INPUT_MOVE_UP_ONLY~ ~INPUT_MOVE_DOWN_ONLY~ ~INPUT_VEH_CINEMATIC_UP_ONLY~ ~INPUT_VEH_CINEMATIC_DOWN_ONLY~ adjust camera\n~INPUT_MOVE_LEFT_ONLY~ ~INPUT_MOVE_RIGHT_ONLY~ rotate\n\n~INPUT_FRONTEND_RRIGHT~ exit',
     ['Confirm_Purchase'] = 'Buy %s for $%s?',

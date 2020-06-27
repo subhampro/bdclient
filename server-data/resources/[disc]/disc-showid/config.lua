@@ -1,6 +1,6 @@
 Config = {}
 
-Config.DrawDistance = 50
+Config.DrawDistance = 10
 
 Config.AdminOnly = true
 Config.Key = {

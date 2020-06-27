@@ -1,4 +1,3 @@
-
 CREATE TABLE IF NOT EXISTS `playerhousing` (
   `id` int(32),
   `owner` varchar(50),
@@ -9,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `playerhousing` (
 );
 
 ALTER TABLE `users`
-  ADD `last_house` INT(11) DEFAULT 0
+  ADD `last_house` INT(11) DEFAULT 0,
 ;
 
 ALTER TABLE `owned_vehicles`

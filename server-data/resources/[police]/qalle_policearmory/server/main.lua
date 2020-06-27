@@ -23,6 +23,6 @@ AddEventHandler("qalle_policearmory:giveWeapon", function(weapon)
     if player then
         player.addWeapon(weapon, Config.ReceiveAmmo)
 
-        TriggerClientEvent("esx:showNotification", source, "Vous venez de recevoir 1x " .. ESX.GetWeaponLabel(weapon) .. " avec " .. Config.ReceiveAmmo .. "x ammo.")
+        TriggerClientEvent("esx:showNotification", source, "You have just received 1x " .. ESX.GetWeaponLabel(weapon) .. " avec " .. Config.ReceiveAmmo .. "x ammo.")
     end
 end)

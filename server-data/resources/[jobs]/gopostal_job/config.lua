@@ -1,6 +1,6 @@
 Config              = {}
 Config.DrawDistance = 100.0
-Config.Locale       = 'fr'
+Config.Locale       = 'en'
 
 Config.JobVehiclePlate = 'GOPOSTAL' -- Plaque des vehicules du job (maximun 8 caractères)
 Config.MaxLetter	   = 4 -- Maximum de lettre par point

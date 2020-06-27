@@ -92,7 +92,17 @@ Config.DoorList = {
 	},
 
 	
-
+	-- GARADGE MAIN GLASS DOOR
+	{
+		objName = 'hei_prop_bh1_08_hdoor',
+		objYaw = -180.0,
+		objCoords  = vector3(419.13, -1017.66, 29.51),
+		textCoords = vector3(419.13, -1017.66, 29.51),
+		authorizedJobs = { 'admin' },
+		locked = true
+	},
+	
+	
 	-- Mission Row Cells
 	--
 
@@ -140,7 +150,7 @@ Config.DoorList = {
 
 	{
 		objName = 'v_ilev_ph_cellgate',
-		objYaw = 90.0,
+		objYaw = 120.0,
 		objCoords  = vector3(1847.37, 3685.3, 34.26),
 		textCoords = vector3(1847.37, 3685.3, 34.26),
 		authorizedJobs = { 'police' },
@@ -149,7 +159,7 @@ Config.DoorList = {
 
 	{
 		objName = 'v_ilev_ph_cellgate',
-		objYaw = 90.0,
+		objYaw = 120.0,
 		objCoords  = vector3(1845.55, 3688.17, 34.26),
 		textCoords = vector3(1845.55, 3688.17, 34.26),
 		authorizedJobs = { 'police' },
@@ -212,7 +222,7 @@ Config.DoorList = {
 -- PD GATE TO GARADGE
 	{
 		objName = 'v_ilev_cbankvaulgate01',
-		objYaw = 0.0,
+		objYaw = -180.0,
 		objCoords  = vector3(423.42, -992.78, 30.79),
 		textCoords = vector3(423.42, -992.78, 31.2),
 		authorizedJobs = { 'police'},
@@ -362,20 +372,20 @@ Config.DoorList = {
 			authorizedJobs = {"police" },
 			locked = true
 		},
--- doorlock nicher dike
+-- -- doorlock nicher dike
 		{
 			objName = "v_ilev_ph_cellgate",
-			objYaw = 0.0,
-			objCoords = vector3(479.45, -1007.1, 24.27),
+			objYaw = -180.0,
+			objCoords = vector3(479.14, -1007.76, 24.27),
 			textCoords = vector3(479.45, -1007.1, 24.27),
 			authorizedJobs = {"police" },
 			locked = true
 		},
--- doorlock nicher dike
+-- -- doorlock nicher dike
 		{
 			objName = "v_ilev_ph_cellgate",
-			objYaw = 0.0,
-			objCoords = vector3(475.78, -1007.3, 24.27),
+			objYaw = -180.0,
+			objCoords = vector3(475.59, -1007.73, 24.27),
 			textCoords = vector3(475.78, -1007.3, 24.27),
 			authorizedJobs = {"police" },
 			locked = true
@@ -383,7 +393,7 @@ Config.DoorList = {
 	-- Front Gate / Parking Gate
 		{
 		objName = 'hei_prop_station_gate',
-		objYaw = 90.0,
+		objYaw = -90.0,
 		objCoords  = vector3(411.51, -1025.95, 29.4),
 		textCoords = vector3(410.89, -1023.46, 29.44),
 		authorizedJobs = { 'police' },
@@ -636,13 +646,13 @@ Config.DoorList = {
 	},
 
 
--- EMS GROUNDFLOOR MEDS
-	--
+-- -- EMS GROUNDFLOOR MEDS
+-- 	--
 	{
 		objName = 'v_ilev_cor_firedoorwide',
-		objYaw = 0.0,
-		objCoords  = vector3(336.3, -582.97, 28.79),
-		textCoords = vector3(337.0, -583.33, 28.79),
+		objYaw = -110.0,
+		objCoords  = vector3(337.37, -583.27, 28.79),
+		textCoords = vector3(337.37, -583.27, 28.79),
 		authorizedJobs = { 'ambulance' },
 		locked = true
 
@@ -651,9 +661,9 @@ Config.DoorList = {
 	
 	{
 		objName = 'v_ilev_cor_firedoorwide',
-		objYaw = 0.0,
-		objCoords  = vector3(333.59, -586.89, 28.79),
-		textCoords = vector3(333.39, -588.34, 28.79),
+		objYaw = -200.0,
+		objCoords  = vector3(333.42, -588.11, 28.79),
+		textCoords = vector3(333.42, -588.11, 28.79),
 		authorizedJobs = { 'ambulance' },
 		locked = true
 
@@ -663,15 +673,15 @@ Config.DoorList = {
 -- Gangs
 
  	-- vagos
-		{
+		-- {
 
-			objName = "ex_p_mp_door_apart_door_black_s",
-			objYaw = 320.0,
-			objCoords = vector3(357.0593, -2051.872, 22.39342),
-			textCoords = vector3(356.59, -2051.52, 22.39),
-			authorizedJobs = {'vagos'},
-			locked = true
-		},
+		-- 	objName = "ex_p_mp_door_apart_door_black_s",
+		-- 	objYaw = 320.0,
+		-- 	objCoords = vector3(357.0593, -2051.872, 22.39342),
+		-- 	textCoords = vector3(356.59, -2051.52, 22.39),
+		-- 	authorizedJobs = {'police'},
+		-- 	locked = true
+		-- },
 
 	 	{
 			objName = "v_ilev_ph_cellgate",

@@ -8,11 +8,13 @@ Config.DeliveryShops = {
 
 Config.DeliveryLocations = {
 	{ x = 2109.09, y = -1697.03, z = 203.77 },
-	{ x = -473.08, y = 1523.30, z = 391.04 }
+	-- { x = -473.08, y = 1523.30, z = 391.04 }
 }
 
 Config.AvailableWeapons = {
-	{ weapon = 'WEAPON_RAILGUN', ammo = 20, price = 594234 },
-	{ weapon = 'WEAPON_COMBATPISTOL', ammo = 60, price = 21500 },
-	{ weapon = 'WEAPON_GOLFCLUB', ammo = 0, price = 4780 },
+	{ weapon = 'WEAPON_CARBINERIFLE', ammo = 35, price = 40000 },
+	{ weapon = 'WEAPON_MICROSMG', ammo = 100, price = 25000 },
+	{ weapon = 'WEAPON_MINISMG', ammo = 30, price = 18500 },
+	{ weapon = 'WEAPON_MACHINEPISTOL', ammo = 15, price = 21000 }
+	
 }

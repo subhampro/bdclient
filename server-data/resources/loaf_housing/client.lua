@@ -4,19 +4,6 @@ local AvailableHouses = {}
 local blips = {}
 local Knockings = {}
 
---[[Citizen['CreateThread'](function()
-    while true do
-        Wait(0)
-        DrawEdge(PlayerPedId())
-        local coords = GetEntityCoords(PlayerPedId())
-        local found, coords, heading = GetClosestVehicleNodeWithHeading(coords.x, coords.y, coords.z, 3.0, 100.0, 2.5)
-        if IsControlJustReleased(0, 38) then
-            SetEntityCoords(PlayerPedId(), coords)
-            SetEntityHeading(PlayerPedId(), heading)
-        end
-    end
-end)]]
-
 Citizen.CreateThread(function()
     while ESX == nil do TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end) Wait(0) end
     while ESX.GetPlayerData().job == nil do Wait(0) end
@@ -27,10 +14,9 @@ Citizen.CreateThread(function()
         local blip = AddBlipForCoord(Config.Furnituring['enter'])
         SetBlipSprite(blip, Config.IKEABlip['Sprite'])
         SetBlipColour(blip, Config.IKEABlip['Colour'])
-        SetBlipAsShortRange(blip, true)
         SetBlipScale(blip, Config.IKEABlip['Scale'])
         BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(Strings['ikea'])
+        AddTextComponentString(Config.IKEABlip['Name'])
         EndTextCommandSetBlipName(blip)
         table.insert(blips, blip)
     end
@@ -69,7 +55,7 @@ Citizen.CreateThread(function()
                                     'default', GetCurrentResourceName(), 'manage_house',
                                 {
                                     title = Strings['Manage_House'],
-                                    align = 'top-left',
+                                    align = 'right',
                                     elements = elements
                                 },
                                 function(data, menu)
@@ -91,7 +77,7 @@ Citizen.CreateThread(function()
                                             'default', GetCurrentResourceName(), 'sell',
                                         {
                                             title = (Strings['Sell_Confirm']):format(math.floor(Config.Houses[OwnedHouse.houseId]['price']*(Config.SellPercentage/100))),
-                                            align = 'top-left',
+                                            align = 'right',
                                             elements = {
                                                 {label = Strings['yes'], value = 'yes'},
                                                 {label = Strings['no'], value = 'no'}
@@ -121,7 +107,7 @@ Citizen.CreateThread(function()
                                     'default', GetCurrentResourceName(), 'buy',
                                 {
                                     title = (Strings['Buy_House_Confirm']):format(k, v['price']),
-                                    align = 'top-left',
+                                    align = 'right',
                                     elements = {
                                         {label = Strings['yes'], value = 'yes'},
                                         {label = Strings['no'], value = 'no'}
@@ -452,7 +438,7 @@ AddEventHandler('loaf_housing:spawnHouse', function(coords, furniture)
                     'default', GetCurrentResourceName(), 'storage',
                 {
                     title = Strings['Storage_Title'],
-                    align = 'top-left',
+                    align = 'right',
                     elements = {
                         {label = Strings['Items'], value = 'i'},
                         {label = Strings['Weapons'], value = 'w'}
@@ -487,7 +473,7 @@ AddEventHandler('loaf_housing:spawnHouse', function(coords, furniture)
                     'default', GetCurrentResourceName(), 'manage_door',
                 {
                     title = Strings['Manage_Door'],
-                    align = 'top-left',
+                    align = 'right',
                     elements = elements,
                 },
                 function(data, menu)
@@ -515,7 +501,7 @@ AddEventHandler('loaf_housing:spawnHouse', function(coords, furniture)
                                     'default', GetCurrentResourceName(), 'edit_furniture',
                                 {
                                     title = Strings['Re_Furnish'],
-                                    align = 'top-left',
+                                    align = 'right',
                                     elements = elements,
                                 },
                                 function(data2, menu2)
@@ -568,7 +554,7 @@ AddEventHandler('loaf_housing:spawnHouse', function(coords, furniture)
                                     'default', GetCurrentResourceName(), 'furnish',
                                 {
                                     title = Strings['Furnish'],
-                                    align = 'top-left',
+                                    align = 'right',
                                     elements = elements,
                                 },
                                 function(data2, menu2)
@@ -667,7 +653,7 @@ AddEventHandler('loaf_housing:spawnHouse', function(coords, furniture)
                             'default', GetCurrentResourceName(), 'let_in',
                         {
                             title = Strings['Let_In'],
-                            align = 'top-left',
+                            align = 'right',
                             elements = elements,
                         },
                         function(data2, menu2)
@@ -807,7 +793,7 @@ AddEventHandler('loaf_housing:knockAccept', function(coords, house, storage, spa
                     'default', GetCurrentResourceName(), 'storage',
                 {
                     title = Strings['Storage_Title'],
-                    align = 'top-left',
+                    align = 'right',
                     elements = {
                         {label = Strings['Items'], value = 'i'},
                         {label = Strings['Weapons'], value = 'w'}

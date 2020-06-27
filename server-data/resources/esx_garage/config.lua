@@ -9,7 +9,7 @@ Config = {
     },
     Impounds = {
         {
-            vehicleSpawn = {coords = vector3(409.2760, -1623.038, 28.83), heading = 285.99},
+            vehicleSpawn = {coords = vector3(406.2401, 29.2919, 230.2229), heading = 285.99},
             menu = vector3(409.2760, -1623.038, 29.2919),
         },
         

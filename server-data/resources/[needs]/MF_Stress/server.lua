@@ -64,8 +64,10 @@ end
 CT(function(...) MFS:Awake(...); end)
 RSC('MF_Stress:GetStartData', function(s,c) local m = MFS; while not m.dS or not m.cS do Citizen.Wait(0); end; c(m.cS); end)
 
-ESX.RegisterUsableItem('joint',function(source,...) MFS.Smoke(source,true); end)
-ESX.RegisterUsableItem('cigarette',function(source,...) MFS.Smoke(source,false); end)
+ESX.RegisterUsableItem('joint',function(source,...) MFS.Smoke(source,true)
+xPlayer.removeInventoryItem('joint', 1); end)
+ESX.RegisterUsableItem('cigarette',function(source,...) MFS.Smoke(source,false)
+xPlayer.removeInventoryItem('cigarette', 1); end)
 ESX.RegisterUsableItem('beer',function(source,...) MFS.Drink(source,true); end)
 ESX.RegisterUsableItem('soda',function(source,...) MFS.Drink(source,false); end)
 TriggerEvent("es:addGroupCommand",'healStress', "admin", function(source,args) TriggerClientEvent('MF_Stress:Heal',source); end)

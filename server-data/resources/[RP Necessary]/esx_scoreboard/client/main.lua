@@ -141,7 +141,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 
-		if IsControlJustReleased(0, Keys['F10'], true) and IsInputDisabled(0) then
+		if IsControlJustReleased(0, Keys['PAGEUP'], true) and IsInputDisabled(0) then
 			ToggleScoreBoard()
 			Citizen.Wait(200)
 

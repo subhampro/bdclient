@@ -35,7 +35,13 @@ files {
 	'html/img/raspberry.png',
 	'html/img/c4_bank.png',
 	'html/img/blowtorch.png',
-	'html/img/whiskey.png'
+	'html/img/whiskey.png',
+	'html/img/vodkafruit.png',
+	'html/img/tequila.png',
+	'html/img/vodka.png',
+	'html/img/whiskycoca.png',
+	'html/img/hackerDevice.png',
+	'html/img/wine.png'
 }
 
 ui_page 'html/ui.html'

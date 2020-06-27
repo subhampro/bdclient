@@ -685,20 +685,20 @@ AddEventHandler('onClientMapStart', function()
 	end
 end)
 
-local STRESS_ACTIVE = false
+-- local STRESS_ACTIVE = false
 
-AddEventHandler('playerSpawned', function()
+-- AddEventHandler('playerSpawned', function()
 	
-	if STRESS_ACTIVE == false then
-		exports.trew_hud_ui:createStatus({
-		    status = 'stress',
-		    color = '#FF0090',
-		    icon = '<i class="fas fa-brain"></i>'
-		});
-		STRESS_ACTIVE = true
-	end
+-- 	if STRESS_ACTIVE == false then
+-- 		exports.trew_hud_ui:createStatus({
+-- 		    status = 'stress',
+-- 		    color = '#FF0090',
+-- 		    icon = '<i class="fas fa-brain"></i>'
+-- 		});
+-- 		STRESS_ACTIVE = true
+-- 	end
 
-end)
+-- end)
 
 AddEventHandler('playerSpawned', function()
 	if Config.ui.showVoice == true then

@@ -11,11 +11,11 @@ Config.EnableClipBlackWeashop	= true
 
 Config.EnableClip = {
 	GunShop = {
-		Price = 5000,
+		Price = 10000000,
 		Label = "Chargeur"	
 	},
 	BlackWeashop = {
-		Price = 8750,
+		Price = 10000000,
 		Label = "Chargeur"	
 	}
 }

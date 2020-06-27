@@ -8,7 +8,7 @@ ctrl.update = function()
         local ped = GetPlayerPed(-1)      
         local inVeh = IsPedInAnyVehicle(ped,false)      
         if inVeh then        
-            if IsControlJustReleased(1, 81) then          
+            if IsControlJustReleased(1, 57) then          
                 Wait(GetFrameTime()*10)          
                 local veh = GetVehiclePedIsIn(ped)          
                 if lastVeh and veh == lastVeh then            

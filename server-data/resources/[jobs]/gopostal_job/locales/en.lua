@@ -41,6 +41,8 @@ Locales['en'] = {
 	['deposit']					= 'Deposit',
 	['pick']					= 'Pick',
 	['take']					= 'You have taken ~y~x%s %s',
+	['take2']					= 'You have taken a truck',
+	['take3']					= 'You have returned the truck',
 	['remove']					= 'You have deposited ~y~x%s %s',
 
 	['player_cannot_hold']		= '~r~[ERROR]: You CANNOT Hold any more.',
@@ -49,6 +51,7 @@ Locales['en'] = {
 		-- Notification Delivery
 	['notif_title_delivery']    = '~r~GoPostal',
 	['notif_district']			= '[Your Sector:]\n----------------------\n%s',	
-
-
+	-- ['bank_deposit_taken']			= 'One Truck Is Out For Postal Delivery',	
+	-- ['bank_deposit_returned']			= 'One Truck Is Returned After Postal Delivery',	
+	
 }

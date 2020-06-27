@@ -24,13 +24,33 @@ Config.Zones = {
 	},
 
 	ls3 = {
-		Pos   = { x = -199.56, y = -1324.75, z = 31.13},
+		Pos   = { x = 110.04, y = 6627.57, z = 31.48},
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
 		Name  = _U('blip_name'),
 		Hint  = _U('press_custom')
 	},
+
+	ls4 = {
+		Pos   = { x = 1175.09, y = 2642.58, z = 37.51},
+		Size  = {x = 3.0, y = 3.0, z = 0.2},
+		Color = {r = 204, g = 204, b = 0},
+		Marker= 1,
+		Name  = _U('blip_name'),
+		Hint  = _U('press_custom')
+	},
+
+	ls5 = {
+		Pos   = { x = 730.44, y = -1088.57, z = 21.92},
+		Size  = {x = 3.0, y = 3.0, z = 0.2},
+		Color = {r = 204, g = 204, b = 0},
+		Marker= 1,
+		Name  = _U('blip_name'),
+		Hint  = _U('press_custom')
+	},
+
+
 }
 
 Config.Colors = {

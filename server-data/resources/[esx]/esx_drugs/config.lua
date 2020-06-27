@@ -38,7 +38,7 @@ Config.Licenses = {
 	chemicalslisence = 100000,
 }
 
-Config.GiveBlack = false -- give black money? if disabled it'll give regular cash.
+Config.GiveBlack = true -- give black money? if disabled it'll give regular cash.
 
 Config.CircleZones = {
 	--Weed
@@ -53,7 +53,7 @@ Config.CircleZones = {
 	
 	--Chemicals
 	ChemicalsField = {coords = vector3(817.46, -3192.84, 5.9), name = _U('blip_ChemicalsFarm'), color = 25, sprite = 496, radius = 0.0},
-	ChemicalsConvertionMenu = {coords = vector3(3718.8, 4533.45, 21.67), name = _U('blip_ChemicalsProcessing'), color = 25, sprite = 496, radius = 0.0},
+	ChemicalsConvertionMenu = {coords = vector3(456.31, 5572.01, 781.18), name = _U('blip_ChemicalsProcessing'), color = 25, sprite = 496, radius = 0.0},
 	
 	--Coke
 	CokeField = {coords = vector3(-310.43, 2496.34, 76.60), name = _U('blip_CokeFarm'), color = 25, sprite = 496, radius = 20.0},
@@ -65,7 +65,7 @@ Config.CircleZones = {
 	
 	--Heroin
 	HeroinField = {coords = vector3(16.34, 6875.94, 12.64), name = _U('blip_heroinfarm'), color = 25, sprite = 496, radius = 20},
-	HeroinProcessing = {coords = vector3(-65.43, 6243.36, 31.08), name = _U('blip_heroinprocessing'), color = 25, sprite = 496, radius = 100.0},
+	HeroinProcessing = {coords = vector3(-69.47, 6256.17, 31.09), name = _U('blip_heroinprocessing'), color = 25, sprite = 496, radius = 100.0},
 
 	--DrugDealer
 	DrugDealer = {coords = vector3(-1172.02, -1571.98, 4.66), name = _U('blip_drugdealer'), color = 6, sprite = 378, radius = 25.0},

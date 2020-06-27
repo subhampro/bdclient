@@ -189,7 +189,7 @@ RegisterNUICallback(
             closeInventory()
         else
             Citizen.Wait(250)
-            loadPlayerInventory()
+            closeInventory()
         end
 
         cb("ok")

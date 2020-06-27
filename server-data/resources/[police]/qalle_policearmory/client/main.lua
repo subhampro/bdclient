@@ -66,8 +66,8 @@ OpenPoliceArmory = function()
 	PlaySoundFrontend(-1, 'BACK', 'HUD_AMMO_SHOP_SOUNDSET', false)
 
 	local elements = {
-		{ ["label"] = "Stockage Armes", ["action"] = "weapon_storage" },
-		{ ["label"] = "Déposé Armes", ["action"] = "weapon_supp" }
+		{ ["label"] = "Withdraw Weapon", ["action"] = "weapon_storage" },
+		{ ["label"] = "Store Weapon", ["action"] = "weapon_supp" }
 	}
 
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), "police_armory_menu",
@@ -83,7 +83,7 @@ OpenPoliceArmory = function()
 			OpenWeaponStorage()
 		elseif action == "weapon_supp" then
 			RemoveAllPedWeapons(GetPlayerPed(-1), true)
-			ESX.ShowNotification("Vous avez déposé vos armes.")
+			ESX.ShowNotification("You laid down your weapons.")
 		end		
 	end, function(data, menu)
 		PlaySoundFrontend(-1, 'BACK', 'HUD_AMMO_SHOP_SOUNDSET', false)

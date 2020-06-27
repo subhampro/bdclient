@@ -70,7 +70,7 @@ AddEventHandler('gopostal_job:Item', function(itemName, amount, label, type)
 		return
 	end
 	if type == 'pick' then
-		if sourceItem.limit ~= -1 and (sourceItem.count + amount) > sourceItem.limit then
+		if sourceItem.weight ~= 2 and (sourceItem.count + amount) > sourceItem.weight then
 			TriggerClientEvent('esx:showNotification', _source, _U('player_cannot_hold'))
 		else
 			xPlayer.addInventoryItem(itemName, amount)
@@ -100,7 +100,7 @@ AddEventHandler('gopostal_job:caution', function(cautionType, cautionAmount)
 	if cautionType == "take" then
 		
 		xPlayer.removeAccountMoney('bank', cautionAmount)
-		TriggerClientEvent('esx:showNotification', source, _U('bank_deposit_taken', ESX.Math.GroupDigits(cautionAmount)))
+		TriggerClientEvent('esx:showNotification', source, _U('take2', ESX.Math.GroupDigits(cautionAmount)))
 		
 	elseif cautionType == "give_back" then
 
@@ -113,7 +113,7 @@ AddEventHandler('gopostal_job:caution', function(cautionType, cautionAmount)
 		local toGive = ESX.Math.Round(caution * cautionAmount)
 
 		xPlayer.addAccountMoney('bank', toGive)
-		TriggerClientEvent('esx:showNotification', source, _U('bank_deposit_returned', ESX.Math.GroupDigits(toGive)))
+		TriggerClientEvent('esx:showNotification', source, _U('take3', ESX.Math.GroupDigits(toGive)))
 	end
 end)
 

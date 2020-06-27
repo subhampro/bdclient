@@ -6,7 +6,7 @@ menuConfigs = {
             return IsPedOnFoot(player)
         end,
         data = {                                    -- Data that is passed to Javascript
-            keybind = "F6",                         -- Wheel keybind to use (case sensitive, must match entry in keybindControls table)
+            keybind = "F5",                         -- Wheel keybind to use (case sensitive, must match entry in keybindControls table)
             style = {                               -- Wheel style settings
                 sizePx = 600,                       -- Wheel size in pixels
                 slices = {                          -- Slice style settings
@@ -48,7 +48,7 @@ menuConfigs = {
             return IsPedInAnyVehicle(player, false)
         end,
         data = {                                    -- Data that is passed to Javascript
-            keybind = "F6",                         -- Wheel keybind to use (case sensitive, must match entry in keybindControls table)
+            keybind = "F5",                         -- Wheel keybind to use (case sensitive, must match entry in keybindControls table)
             style = {                               -- Wheel style settings
                 sizePx = 400,                       -- Wheel size in pixels
                 slices = {                          -- Slice style settings

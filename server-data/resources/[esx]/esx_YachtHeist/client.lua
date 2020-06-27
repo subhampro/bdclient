@@ -830,13 +830,13 @@ end
 Citizen.CreateThread(function()
   for k,v in pairs(Config.Yacht) do
     local blip = AddBlipForCoord(v.startPos[1], v.startPos[2], v.startPos[3])
-    SetBlipSprite (blip, v.blipSprite)
+    SetBlipSprite (blip, 455)
     SetBlipDisplay(blip, 4)
-    SetBlipScale  (blip, v.blipScale)
-    SetBlipColour (blip, v.blipColor)
+    SetBlipScale  (blip, 1.0)
+    SetBlipColour (blip, 3)
     SetBlipAsShortRange(blip, true)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(v.blipName)
+    AddTextComponentString('Yatch')
     EndTextCommandSetBlipName(blip)
   end
 end)

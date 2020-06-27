@@ -3,22 +3,22 @@ ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1000)
+-- Citizen.CreateThread(function()
+-- 	while true do
+-- 		Citizen.Wait(1000)
 		
-		local STRESS_STATUS
+-- 		local STRESS_STATUS
 
-		TriggerEvent('esx_status:getStatus', 'stress', function(status)
-		    STRESS_STATUS = status.getPercent()
-		end)
+-- 		TriggerEvent('esx_status:getStatus', 'stress', function(status)
+-- 		    STRESS_STATUS = status.getPercent()
+-- 		end)
 
-		exports.trew_hud_ui:setStatus({
-		    name = 'stress',
-		    value = STRESS_STATUS
-		});
-	end
-end)
+-- 		exports.trew_hud_ui:setStatus({
+-- 		    name = 'stress',
+-- 		    value = STRESS_STATUS
+-- 		});
+-- 	end
+-- end)
 
 Citizen.CreateThread(function()
 	Citizen.Wait(1000)

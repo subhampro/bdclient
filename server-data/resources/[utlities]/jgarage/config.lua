@@ -8,20 +8,20 @@ Config.Garages = {
     ["Main"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(212.39, -808.66, 31.81)
+                ["position"] = vector3(213.8, -808.93, 31.01)
             },
             ["vehicle"] = {
-                ["position"] = vector3(211.64, -800.16, 29.3), 
-                ["heading"] = 336.32
+                ["position"] = vector3(231.01, -796.4, 30.4), 
+                ["heading"] = 158.6
             }
         },
         ["camera"] = {  -- camera is not needed just if you want cool effects.
-            ["x"] = 213.52, 
-            ["y"] = -791.67, 
-            ["z"] = 33.88, 
-            ["rotationX"] = -31.401574149728, 
+            ["x"] = 225.62, 
+            ["y"] = -798.86, 
+            ["z"] = 32.56, 
+            ["rotationX"] = -25.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = -175.40157422423 
+            ["rotationZ"] = -70.40157422423 
         }
     },
 

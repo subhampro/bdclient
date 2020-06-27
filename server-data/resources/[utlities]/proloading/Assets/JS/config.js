@@ -3,7 +3,7 @@ var volume = '50' // 0 - 100 | Volume de la vidéo YouTube
 
 var img = "Logo.png" // Nom du fichier image de votre serveur dans : Assets/IMG
 
-var red_text = 'Server Name' // Texte en rouge
+var red_text = 'OLL RP' // Texte en rouge
 var blue_text = 'SERIOUS RP' // Texte en bleu
 
 // PlayList

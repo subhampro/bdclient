@@ -6,14 +6,14 @@ Config.Size 			= {x = 1.5, y = 1.5, z = 1.5}
 Config.Color 			= {r = 255, g = 120, b = 0}
 Config.Type 			= 29
 
-Config.taxRate = 0.90  --90% of the dirty you will get back in clean
+Config.taxRate = 0.85  --90% of the dirty you will get back in clean
 
 Config.enableTimer = false -- Enable ONLY IF you want a timer on the money washing. Keep in mind the Player does not have to stay at the wash for it to actually wash the money.
 local second = 1000
 local minute = 60 * second
 local hour = 60 * minute
 
-Config.timer = 5 * second -- Time it takes to wash money. The * amount will determine if its hours, second, or minutes.
+Config.timer = 1 * second -- Time it takes to wash money. The * amount will determine if its hours, second, or minutes.
 
 --[[ 
 	Below are the zones for laundering. You can set multiple zones just follow the format below. 
