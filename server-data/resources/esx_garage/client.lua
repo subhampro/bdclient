@@ -4,7 +4,8 @@ Citizen.CreateThread(function()
     while not NetworkIsSessionStarted() or ESX.GetPlayerData().job == nil do Wait(0) end
     DoScreenFadeIn(0)
     for k, v in pairs(Config.Impounds) do
-        addBlip(v.menu, 67, 47, Strings['impound_blip'])
+        -- Changed v.menu , 67 
+        addBlip(v.menu, 11, 47, Strings['impound_blip'])
     end
     for k, v in pairs(Config.Entrances) do
         addBlip(v.coords, 50, 38, Strings['garage'])

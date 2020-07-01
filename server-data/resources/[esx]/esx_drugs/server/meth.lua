@@ -2,22 +2,38 @@ local playersProcessingMeth = {}
 
 RegisterServerEvent('esx_illegal:pickedUpHydrochloricAcid')
 AddEventHandler('esx_illegal:pickedUpHydrochloricAcid', function()
-	local xPlayer = ESX.GetPlayerFromId(source)
-	local xItem = xPlayer.getInventoryItem('hydrochloric_acid')
+	-- local xPlayer = ESX.GetPlayerFromId(source)
+	-- local xItem = xPlayer.getInventoryItem('hydrochloric_acid')
+	
+	local _source = source	
+	local xPlayer = ESX.GetPlayerFromId(_source)
+	local recoleccionsuerte = math.random(1,100)
+	local hydrochloric_acid = xPlayer.getInventoryItem('hydrochloric_acid').count	
+	local hydrochloric_acid = xPlayer.getInventoryItem('hydrochloric_acid').count	
 
-	if xItem.weight ~= -1 and (xItem.count + 1) > xItem.weight then
-		TriggerClientEvent('esx:showNotification', _source, _U('hydrochloric_acid_inventoryfull'))
-	else
-		xPlayer.addInventoryItem(xItem.name, 1)
-	end
+-- 	if xItem.weight ~= 5 and (xItem.count + 1) > xItem.weight then
+-- 		TriggerClientEvent('esx:showNotification', _source, _U('hydrochloric_acid_inventoryfull'))
+-- 	else
+-- 		xPlayer.addInventoryItem(xItem.name, 1)
+-- 	end
+-- end)
+
+if xPlayer.getInventoryItem('hydrochloric_acid').count >= 40 then
+         	TriggerClientEvent('esx:showNotification', source, '~r~You cant carry more HydroChloric Acid')
+else 
+			xPlayer.addInventoryItem("hydrochloric_acid", 1)
+
+end		
 end)
+
+
 
 RegisterServerEvent('esx_illegal:pickedUpSodiumHydroxide')
 AddEventHandler('esx_illegal:pickedUpSodiumHydroxide', function()
 	local xPlayer = ESX.GetPlayerFromId(source)
 	local xItem = xPlayer.getInventoryItem('sodium_hydroxide')
 
-	if xItem.weight ~= -1 and (xItem.count + 1) > xItem.weight then
+	if xItem.weight ~= 10 and (xItem.count + 1) > xItem.weight then
 		TriggerClientEvent('esx:showNotification', _source, _U('sodium_hydroxide_inventoryfull'))
 	else
 		xPlayer.addInventoryItem(xItem.name, 1)
@@ -29,7 +45,7 @@ AddEventHandler('esx_illegal:pickedUpSulfuricAcid', function()
 	local xPlayer = ESX.GetPlayerFromId(source)
 	local xItem = xPlayer.getInventoryItem('sulfuric_acid')
 
-	if xItem.weight ~= -1 and (xItem.count + 1) > xItem.weight then
+	if xItem.weight ~= 5 and (xItem.count + 1) > xItem.weight then
 		TriggerClientEvent('esx:showNotification', _source, _U('sulfuric_acid_inventoryfull'))
 	else
 		xPlayer.addInventoryItem(xItem.name, 1)
@@ -45,7 +61,7 @@ AddEventHandler('esx_illegal:processMeth', function()
 			local xPlayer = ESX.GetPlayerFromId(_source)
 			local xhydrochloric_acid,xsulfuric_acid,xsodium_hydroxide,xmeth = xPlayer.getInventoryItem('hydrochloric_acid'),xPlayer.getInventoryItem('sulfuric_acid'),xPlayer.getInventoryItem('sodium_hydroxide'), xPlayer.getInventoryItem('meth')
 
-			if xmeth.weight ~= -1 and (xmeth.count + 1) > xmeth.weight then
+			if xmeth.weight ~= 10 and (xmeth.count + 1) > xmeth.weight then
 				TriggerClientEvent('esx:showNotification', _source, _U('meth_processingfull'))
 			elseif xhydrochloric_acid.count < 1 then
 				TriggerClientEvent('esx:showNotification', _source, _U('meth_processingenough'))

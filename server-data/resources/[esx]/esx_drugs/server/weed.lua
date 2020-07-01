@@ -2,14 +2,27 @@ local playersProcessingCannabis = {}
 
 RegisterServerEvent('esx_illegal:pickedUpCannabis')
 AddEventHandler('esx_illegal:pickedUpCannabis', function()
-	local xPlayer = ESX.GetPlayerFromId(source)
-	local xItem = xPlayer.getInventoryItem('cannabis')
+	-- local xPlayer = ESX.GetPlayerFromId(source)
+	-- local xItem = xPlayer.getInventoryItem('cannabis')
+    local _source = source	
+	local xPlayer = ESX.GetPlayerFromId(_source)
+	local recoleccionsuerte = math.random(1,100)
+	local cannabis = xPlayer.getInventoryItem('cannabis').count	
+	local cannabis = xPlayer.getInventoryItem('cannabis').count	
+	
 
-	if xItem.weight ~= -1 and (xItem.count + 1) > xItem.weight then
-		TriggerClientEvent('esx:showNotification', _source, _U('weed_inventoryfull'))
-	else
-		xPlayer.addInventoryItem(xItem.name, 1)
-	end
+-- 	if xItem.weight ~= 5 and (xItem.count + 1) > xItem.weight then
+-- 		TriggerClientEvent('esx:showNotification', _source, _U('weed_inventoryfull'))
+-- 	else
+-- 		xPlayer.addInventoryItem(xItem.name, 1)
+-- 	end
+-- end)
+if xPlayer.getInventoryItem('cannabis').count >= 40 then
+         	TriggerClientEvent('esx:showNotification', source, '~r~You cant carry more Weeds')
+else 
+			xPlayer.addInventoryItem("cannabis", 1)
+
+end		
 end)
 
 RegisterServerEvent('esx_illegal:processCannabis')
@@ -21,7 +34,7 @@ AddEventHandler('esx_illegal:processCannabis', function()
 			local xPlayer = ESX.GetPlayerFromId(_source)
 			local xCannabis, xMarijuana = xPlayer.getInventoryItem('cannabis'), xPlayer.getInventoryItem('marijuana')
 
-			if xMarijuana.weight ~= -1 and (xMarijuana.count + 1) > xMarijuana.weight then
+			if xMarijuana.weight ~= 10 and (xMarijuana.count + 1) > xMarijuana.weight then
 				TriggerClientEvent('esx:showNotification', _source, _U('weed_processingfull'))
 			elseif xCannabis.count < 2 then
 				TriggerClientEvent('esx:showNotification', _source, _U('weed_processingenough'))

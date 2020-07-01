@@ -1,15 +1,15 @@
 Config = {
     ImpoundPrice = 50, -- price to retrieve impounded car
     Entrances = {
-        {coords = vector3(83.8, 95.68, 77.66), heading = 70.25},
-        {coords = vector3(-742.92, -2473.92, 13.45), heading = 332.11},
+        -- {coords = vector3(83.8, 95.68, 77.66), heading = 70.25},
+        -- {coords = vector3(-742.92, -2473.92, 13.45), heading = 332.11},
     },
     View = {
         vehicle = {coords = vector3(228.8, -986.97, -99.96), heading = 179.12},
     },
     Impounds = {
         {
-            vehicleSpawn = {coords = vector3(406.2401, 29.2919, 230.2229), heading = 285.99},
+            vehicleSpawn = {coords = vector3(411.12, -1636.8, 28.93), heading = 229.54},
             menu = vector3(409.2760, -1623.038, 29.2919),
         },
         
@@ -21,6 +21,11 @@ Config = {
         {
             vehicleSpawn = {coords = vector3(-243.8378, 6194.4185, 31.4892), heading = 225.9618},
             menu = vector3(-237.2449, 6201.4565, 31.9392),
+        },
+        
+        {
+            vehicleSpawn = {coords = vector3(-721.52, -1348.95, 0.28), heading = 138.70},
+            menu = vector3(-741.94, -1331.64, 1.6),
         },
     },
 }

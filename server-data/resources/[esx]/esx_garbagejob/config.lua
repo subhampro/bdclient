@@ -3,7 +3,7 @@ Config.DrawDistance = 100.0
 Config.MaxDelivery	= 10
 Config.TruckPrice	= 30
 Config.Locale       = 'en'
-Config.BagPay       = 25
+Config.BagPay       = 120
 
 Config.Trucks = {
 	"trash",

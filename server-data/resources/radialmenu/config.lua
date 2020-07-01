@@ -30,14 +30,14 @@ menuConfigs = {
                     minRadiusPercent = 0.3,         -- Minimum radius of wheel in percentage
                     maxRadiusPercent = 0.6,         -- Maximum radius of wheel in percentage
                     labels = {"NO", "CHEER", "CLAP", "FOLDARMS", "LEAN", "Dance"},
-                    commands = {"e no", "e cheer", "e slowclap", "e foldarms", "e leanwall", "e dance"}
+                    commands = {"e no", "e cheer", "e slowclap", "e foldarms2", "e lean4", "e dance"}
                 },
                 {
                     navAngle = 285,                 -- Oritentation of wheel
                     minRadiusPercent = 0.6,         -- Minimum radius of wheel in percentage
                     maxRadiusPercent = 0.9,         -- Maximum radius of wheel in percentage
-                    labels = {"SALUTE", "FINGER", "PEACE", "FACEPALM", "DAMN", "FAIL", "DEAD", "GANG1", "GANG2", "COP", "HOLSTER", "CROWDS"},
-                    commands = {"e salute", "e finger", "e peace", "e palm", "e damn", "e fail", "e dead", "e gang1", "e gang2", "e copidle", "e holster", "e copcrowd2"}
+                    labels = {"SALUTE", "FINGER", "PEACE", "FACEPALM", "DAMN", "FALLOVER", "CROSSARMS", "GANG1", "HUG", "COP", "SLEEP", "SITCHAIR"},
+                    commands = {"e salute", "e finger2", "e peace", "e facepalm4", "e damn", "e fallover2", "e crossarms", "e gangsign", "e hug3", "e cop", "e sleep", "e sitchair"}
                 }
             }
         }

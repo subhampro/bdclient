@@ -274,25 +274,8 @@ Config.DoorList = {
 			}
 		},	
 	
-		{
-			textCoords = vector3(465.46, -990.05, 25.5),
-			authorizedJobs = { 'police' },
-			locked = true,
-			distance = 2,
-			doors = {
-				{
-					objName = 'v_ilev_ph_gendoor003',
-					objYaw = 270.0,
-					objCoords  = vector3(465.6, -990.64, 24.91),
-				},
-	
-				{
-					objName = 'v_ilev_ph_gendoor003',
-					objYaw = 90.0,
-					objCoords  = vector3(465.49, -989.44, 24.91),
-				}
-			}
-		},	
+		
+			
 
 		{
 			textCoords = vector3(469.91, -1010.43, 27),

@@ -34,9 +34,9 @@ Config.Scenarios = {
 		SpawnPoint = { x = 478.92, y = -3371.19, z = 5.5, h = 5.77 }, 
 		DeliveryPoint = 6.0,
 		VehicleName = "burrito3",
-		MinCopsOnline = 0,
-		CargoCost = 2500,
-		CargoReward = 5000
+		MinCopsOnline = 2,
+		CargoCost = 15000,
+		CargoReward = 28000
 	
 	},
 
@@ -44,18 +44,18 @@ Config.Scenarios = {
 		SpawnPoint = { x = 478.92, y = -3371.19, z = 5.5, h = 5.77 }, 
 		DeliveryPoint = 6.0,
 		VehicleName = "burrito3",
-		MinCopsOnline = 2,
-		CargoCost = 5000,
-		CargoReward = 10000
+		MinCopsOnline = 3,
+		CargoCost = 20000,
+		CargoReward = 41000
 	
 	},
 	{ 
 		SpawnPoint = { x = 478.92, y = -3371.19, z = 5.5, h = 5.77 },  
 		DeliveryPoint = 6.0,
 		VehicleName = "burrito3",
-		MinCopsOnline = 5,
-		CargoCost = 15000,
-		CargoReward = 40000
+		MinCopsOnline = 4,
+		CargoCost = 30000,
+		CargoReward = 65000
 	
 	}
 }

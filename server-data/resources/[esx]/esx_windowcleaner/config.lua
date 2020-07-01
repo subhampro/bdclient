@@ -80,7 +80,7 @@ Config.Zones = {
 	ItemRequires = "receipt",
 	ItemRequires_name = "W.C receipt",
 	ItemDrop = 100,
-	ItemPrice  = 30,
+	ItemPrice  = 3500,
 	hint = 'Press on ~INPUT_CONTEXT~ to cash in  W.C receipts',
   },
   

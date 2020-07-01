@@ -209,15 +209,15 @@ Citizen.CreateThread(function()
     for i = 1, #Config.Shops do 
         peds[i] = _CreatePed(Config.Shopkeeper, Config.Shops[i].coords, Config.Shops[i].heading)
 
-        if Config.Shops[i].blip then
-            local blip = AddBlipForCoord(Config.Shops[i].coords)
-            SetBlipSprite(blip, 156)
-            SetBlipColour(blip, 40)
-            SetBlipAsShortRange(blip, true)
-            BeginTextCommandSetBlipName("STRING")
-            AddTextComponentString(Config.Shops[i].name)
-            EndTextCommandSetBlipName(blip)
-        end
+    --    if Config.Shops[i].blip then
+    --        local blip = AddBlipForCoord(Config.Shops[i].coords)
+    --        SetBlipSprite(blip, 156)
+    --        SetBlipColour(blip, 40)
+    --        SetBlipAsShortRange(blip, true)
+    --        BeginTextCommandSetBlipName("STRING")
+    --        AddTextComponentString(Config.Shops[i].name)
+    --        EndTextCommandSetBlipName(blip)
+    --    end
 
         local brokenCashRegister = GetClosestObjectOfType(GetEntityCoords(peds[i]), 5.0, GetHashKey('prop_till_01_dam'))
         if DoesEntityExist(brokenCashRegister) then

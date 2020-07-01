@@ -5,7 +5,7 @@ Config.UseESX = true
 
 -- What should the price of jerry cans be?
 Config.JerryCanCost = 500
-Config.RefillCost = 250 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
+Config.RefillCost = 200 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
 
 -- Fuel decor - No need to change this, just leave it.
 Config.FuelDecor = "_FUEL_LEVEL"
@@ -21,7 +21,7 @@ Config.ShowNearestGasStationOnly = true
 Config.ShowAllGasStations = false
 
 -- Modify the fuel-cost here, using a multiplier value. Setting the value to 2.0 would cause a doubled increase.
-Config.CostMultiplier = 8.0
+Config.CostMultiplier = 3.0
 
 -- Configure the strings as you wish here.
 Config.Strings = {
@@ -31,7 +31,7 @@ Config.Strings = {
 	FullTank = "Tank is full",
 	--PurchaseJerryCan = "Press ~g~E ~w~to purchase a jerry can for ~g~$" .. Config.JerryCanCost,
 	CancelFuelingPump = "Press ~g~E ~w~to cancel the fueling",
-	CancelFuelingJerryCan = "Press ~g~E ~w~to cancel the fueling",
+	--CancelFuelingJerryCan = "Press ~g~E ~w~to cancel the fueling",
 	NotEnoughCash = "Not enough cash",
 	--RefillJerryCan = "Press ~g~E ~w~ to refill the jerry can for ",
 	--NotEnoughCashJerryCan = "Not enough cash to refill jerry can",
